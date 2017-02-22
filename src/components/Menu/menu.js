@@ -1,6 +1,6 @@
 import React from 'react'
-import {  Link } from 'react-router'
-
+import {  Route,IndexRoute, Link } from 'react-router'
+import App from '../../app'
 class Menu extends React.Component {
     constructor() {
         super()
@@ -8,10 +8,12 @@ class Menu extends React.Component {
 
     render() {
         return (
-            <div>
-                <Link to="/chats">chats</Link>
-                <Link to="/groups">groups</Link>
-                <Link to="/address">address</Link>
+        	<div>
+	            <div>
+	                <Link to="/chats">chats</Link>
+	                <Link to="/groups">groups</Link>
+	                <Link to="/address">address</Link>
+	            </div>
             </div>
         )
     }
